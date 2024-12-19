@@ -1,0 +1,9 @@
+services:
+  - name: apache-nifi
+    type: web
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    ports:
+      - 8080
